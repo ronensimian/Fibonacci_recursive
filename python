@@ -1,0 +1,10 @@
+# Returns the N-th term of the Fibonacci series
+def fibo(number):
+    if number == 0 or number == 1:
+        return number
+    else:
+        return (fibo(number-1) + fibo(number-2));
+
+
+user_input = eval(input("Enter a number: "));
+print (fibo(user_input));
